@@ -1,0 +1,26 @@
+{
+  "name": "tern-tsserver",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "tsserver.js",
+  "author": "Angelo ZERR <angelo.zerr@gmail.com>",
+  "description": "TypeScript server.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angelozerr/tern-tsserver.git"
+  },
+  "scripts": {
+    "publish": "node ./scripts/git-tag.js",
+    "test": "node ./test/all.js"
+  },
+  "dependencies": {
+    "typescript": "^1.6.2"
+  },
+  "devDependencies": {
+  	"test": ">=0.0.5"
+  },
+  "keywords": [
+    "tern",
+    "TypeScript"
+  ]
+}
