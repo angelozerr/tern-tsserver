@@ -1,13 +1,2 @@
-var ts = require('typescript/lib/tsserver.js');
-var Session = ts.server.Session;
-
-Session.prototype.extend = function extend(name, f) {
-  this[name] = f(this[name]);
-};
-
-Session.prototype.extend('onMessage', function(inner) {
-  return function(message) {
-  	this.output(undefined, "BEFORE => " + message);
-    return inner.call(this, message);
-  };
-});
+#!/usr/bin/env node
+require('../lib/tern.js')
