@@ -1,0 +1,13 @@
+{"command": "open", "arguments": {"file": "lib.d.ts"}}
+{"command": "open", "arguments": {"file": "a.d.ts"}}
+
+{"command": "completions", "arguments": {"line": 2, "offset": 17, "file": "a.d.ts"}}
+
+
+{"command": "geterrForProject", "arguments": {"file": "lib.es6.d.ts"}}
+
+
+===========================
+{"files":[{"name":"test.ts","text":"var a = '';a.","type":"full"}]}
+{"query":{"type":"completions","file":"test.ts","end":13}}
+
